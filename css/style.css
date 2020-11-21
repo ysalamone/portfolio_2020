@@ -1,0 +1,108 @@
+/* **************************** */
+/* SCSS pour le menu responsive */
+/* **************************** */
+/* variables */
+/* placeholders */
+.barreMenu, .menu {
+  background-color: #FF0D;
+}
+
+.hamb, .checkMenu {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 14px;
+  right: 28px;
+}
+
+/* CSS */
+.barreMenu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  height: 68px;
+}
+
+.titre {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.titre h1 {
+  margin: 0 0 0 28px;
+}
+
+.barrnav {
+  color: #000;
+}
+
+.barrnav a {
+  color: inherit;
+}
+
+.checkMenu {
+  opacity: 0;
+}
+
+.menu {
+  display: none;
+  list-style: none;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  position: absolute;
+  top: 68px;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px 24px;
+  min-width: 150px;
+  text-align: right;
+}
+
+input[type='checkbox']:checked ~ ul.menu {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* media query responsive */
+@media screen and (min-width: 768px) {
+  .hamb, .checkMenu {
+    display: none;
+  }
+  .menu {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+    width: initial;
+    top: initial;
+  }
+  .menu li a {
+    text-align: center;
+    min-width: initial;
+    padding: 12px;
+  }
+  .barrnav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    margin: 0 auto;
+  }
+  .titre, .menu, .barrnav {
+    background: initial;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
