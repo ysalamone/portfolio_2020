@@ -6,7 +6,7 @@ body {
 
 header {
   height: 100vh;
-  background: url("../img/portfolio_mobile.png") no-repeat top/cover;
+  background: url("../img/bg_mobile.png") no-repeat top/cover;
 }
 
 .bandeNom {
@@ -34,22 +34,29 @@ header {
   .dev {
     align-self: flex-end;
     width: 50vw;
+    max-width: 280px;
     height: calc(50vw / 2.66); //conserver le ratio du svg en fonction de sa largeur
+    max-height: 107px;
     margin: 35px 0 16px 0;
   }
   span {
     font-family: Raleway, sans-serif;
     font-size: 18px;
     line-height: 1.25;
+    max-width: 520px;
   }
 }
 
 @media screen and (min-width: 768px) {
 
   header {
-    height: 70vh;
-    background-image: url("../img/portfolio_desktop.png");
+    height: 75vh;
+    background-image: url("../img/bg_desktop.png");
   }
+
+}
+
+@media screen and (min-width: 992px) {
 
   .bandeNom {
     height: 80px;
