@@ -1,4 +1,13 @@
+body {
+  color: #707070;
+}
+
 header {
+  height: 100vh;
+  background: url("../img/portfolio_mobile.png") no-repeat top/cover;
+}
+
+.bandeNom {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -9,15 +18,49 @@ header {
   background-color: #333;
 }
 
-header .nom {
+.bandeNom .nom {
   height: 30px;
+}
+
+.accroche {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  background-color: #fffd;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 250px;
+  -webkit-clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+  padding: 24px;
+}
+
+.accroche .dev {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 50vw;
+  height: calc(50vw / 2.66);
+  margin: 35px 0 16px 0;
+}
+
+.accroche span {
+  font-size: 18px;
+  line-height: 1.25;
 }
 
 @media screen and (min-width: 768px) {
   header {
+    height: 70vh;
+    background-image: url("../img/portfolio_desktop.png");
+  }
+  .bandeNom {
     height: 80px;
   }
-  header .nom {
+  .bandeNom .nom {
     height: 40px;
   }
 }

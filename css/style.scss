@@ -1,4 +1,13 @@
+body {
+  color: #707070;
+}
+
 header {
+  height: 100vh;
+  background: url("../img/portfolio_mobile.png") no-repeat top/cover;
+}
+
+.bandeNom {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,9 +18,37 @@ header {
   }
 }
 
+.accroche {
+  display: flex;
+  flex-direction: column;
+  background-color: #fffd;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 250px;
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+  padding: 24px;
+  .dev {
+    align-self: flex-end;
+    width: 50vw;
+    height: calc(50vw / 2.66); //conserver le ratio du svg en fonction de sa largeur
+    margin: 35px 0 16px 0;
+  }
+  span {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+}
+
 @media screen and (min-width: 768px) {
 
   header {
+    height: 70vh;
+    background-image: url("../img/portfolio_desktop.png");
+  }
+
+  .bandeNom {
     height: 80px;
     .nom {
       height: 40px;
