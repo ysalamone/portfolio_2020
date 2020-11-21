@@ -102,6 +102,28 @@ header {
   header {
     height: 75vh;
     background-image: url("../img/bg_desktop.png");
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+  }
+  .bandeNom {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .accroche {
+    position: initial;
+    width: 50vw;
+    height: 350px;
+    margin-bottom: 50px;
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+            clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  }
+  .accroche .dev {
+    margin-top: 60px;
   }
 }
 
