@@ -1,3 +1,5 @@
+@import 'fonts';
+
 body {
   color: #707070;
 }
@@ -36,6 +38,7 @@ header {
     margin: 35px 0 16px 0;
   }
   span {
+    font-family: Raleway, sans-serif;
     font-size: 18px;
     line-height: 1.25;
   }

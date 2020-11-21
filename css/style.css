@@ -1,3 +1,45 @@
+@font-face {
+  font-family: 'MADE Canvas';
+  src: url("../fonts/MADECanvas-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MADE Canvas';
+  src: url("../fonts/MADECanvas.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MADE Canvas';
+  src: url("../fonts/MADECanvas-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   color: #707070;
 }
@@ -48,6 +90,7 @@ header {
 }
 
 .accroche span {
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   line-height: 1.25;
 }
