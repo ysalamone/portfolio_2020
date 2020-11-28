@@ -98,9 +98,9 @@ header {
 .accroche .dev {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  width: 50vw;
+  width: 50vmin;
   max-width: 280px;
-  height: calc(50vw / 2.66);
+  height: calc(50vmin / 2.66);
   max-height: 107px;
   margin: 35px 0 16px 0;
 }
@@ -189,16 +189,16 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), screen and (orientation: landscape) {
   header {
     background-image: url("../img/bg_tablet.png");
-    background-position: right;
+    background-position: top right;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
-    -ms-flex-pack: end;
-        justify-content: flex-end;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
   .bandeNom {
     position: absolute;
@@ -211,13 +211,15 @@ header {
     width: 50vw;
     max-width: 600px;
     height: 350px;
-    margin-bottom: 50px;
     -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
             clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
   }
   .accroche .dev {
     margin-top: 60px;
   }
+}
+
+@media screen and (min-width: 768px) {
   .container {
     width: 100%;
   }

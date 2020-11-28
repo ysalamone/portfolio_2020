@@ -50,9 +50,9 @@ header {
   padding: 24px;
   .dev {
     align-self: flex-end;
-    width: 50vw;
+    width: 50vmin;
     max-width: 280px;
-    height: calc(50vw / 2.66); //conserver le ratio du svg en fonction de sa largeur
+    height: calc(50vmin / 2.66); //conserver le ratio du svg en fonction de sa largeur
     max-height: 107px;
     margin: 35px 0 16px 0;
   }
@@ -133,20 +133,22 @@ header {
 }
 
 @media screen and(min-width: 576px) {
+
   .container {
     width: 576px;
     margin: 0 auto;
   }
+
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), screen and (orientation: landscape) {
 
   header {
     background-image: url("../img/bg_tablet.png");
     background-position: top right;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   .bandeNom {
@@ -161,12 +163,15 @@ header {
     width: 50vw;
     max-width: 600px;
     height: 350px;
-    margin-bottom: 50px;
     clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
     .dev {
       margin-top: 60px;
     }
   }
+
+}
+
+@media screen and (min-width: 768px) {
 
   .container {
     width: 100%;
