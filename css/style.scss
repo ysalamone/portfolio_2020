@@ -71,6 +71,7 @@ header {
   font-weight: 900;
   font-size: 2em;
   text-align: center;
+  -webkit-text-stroke-width: 0.025em;
 }
 
 .real {
@@ -96,6 +97,7 @@ header {
   font-family: "MADE Canvas", serif;
   font-size: 1.25em;
   text-align: center;
+  -webkit-text-stroke-width: 0.025em;
 }
 
 .real_desc {
@@ -114,6 +116,7 @@ header {
   font-family: "MADE Canvas", serif;
   font-size: 1em;
   color: $gris;
+  -webkit-text-stroke-width: 0.025em;
   margin-right: 24px;
   transition: 0.2s;
 }
