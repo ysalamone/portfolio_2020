@@ -5,6 +5,10 @@ $gris: #707070;
 $gris-clair: #ebebeb;
 $or: #cba837;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: $gris;
   font-family: Raleway, sans-serif;
@@ -57,12 +61,9 @@ header {
   }
 }
 
-.section-1 {
-  padding: 36px 24px;
-}
-
 .container {
   width: 100%;
+  padding: 36px 24px;
 }
 
 .titre-section {
@@ -74,7 +75,8 @@ header {
 
 .real {
   margin: 36px 0;
-  min-height: 45vw;
+  height: 45vw;
+  max-height: 260px;
 }
 
 .real_img {
@@ -124,6 +126,13 @@ header {
 .real_lien:hover {
   color: $or;
   margin-right: 12px;
+}
+
+@media screen and(min-width: 576px) {
+  .container {
+    width: 576px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
