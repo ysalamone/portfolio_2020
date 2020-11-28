@@ -42,6 +42,8 @@
 
 body {
   color: #707070;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
 }
 
 img {
@@ -96,7 +98,6 @@ header {
 }
 
 .accroche span {
-  font-family: Raleway, sans-serif;
   font-size: 18px;
   line-height: 1.25;
   max-width: 520px;
@@ -115,23 +116,69 @@ header {
   font-weight: 900;
   font-size: 28px;
   text-align: center;
-  margin-bottom: 36px;
 }
 
-.image-realisation {
+.real {
+  margin: 36px 0;
+  min-height: 45vw;
+}
+
+.real_img {
   -webkit-clip-path: polygon(3.4% 0, 100% 0, 79.5% 100%, 0 100%, 0 16%);
           clip-path: polygon(3.4% 0, 100% 0, 79.5% 100%, 0 100%, 0 16%);
+  shape-outside: polygon(3.4% 0, 100% 0, 79.5% 100%, 0 100%, 0 16%);
   width: 45%;
-  height: 45vw;
+  max-width: 230px;
+  max-height: 230px;
+  float: left;
+  margin-right: 20px;
 }
 
-.image-realisation img {
+.real_img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: right;
-     object-position: right;
+}
+
+.real_titre {
+  position: relative;
+  z-index: -1;
+  padding: 8px 4%;
+  line-height: 1;
+  -webkit-clip-path: polygon(58px 0, 100% 0, calc(100% - 8px) 100%, 50px 100%);
+          clip-path: polygon(58px 0, 100% 0, calc(100% - 8px) 100%, 50px 100%);
+  background-color: #cba837;
+  color: #fff;
+  font-family: "MADE Canvas", serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.real_desc {
+  margin: 16px 0;
+}
+
+.real_lien::before {
+  content: '> ';
+}
+
+.real_lien {
+  display: block;
+  text-align: right;
+  text-transform: uppercase;
+  text-decoration: underline;
+  -webkit-text-stroke: 1px;
+  font-family: "MADE Canvas", serif;
+  font-size: 16px;
+  color: #707070;
+  margin-right: 24px;
+  transition: 0.2s;
+}
+
+.real_lien:hover {
+  color: #cba837;
+  margin-right: 12px;
 }
 
 @media screen and (min-width: 768px) {
