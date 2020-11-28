@@ -44,6 +44,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   color: #707070;
   font-family: Raleway, sans-serif;
@@ -55,7 +59,7 @@ img {
 }
 
 header {
-  height: 100vh;
+  height: 100%;
   background: url("../img/bg_mobile.png") no-repeat top/cover;
 }
 
