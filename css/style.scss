@@ -12,7 +12,7 @@ $or: #cba837;
 body {
   color: $gris;
   font-family: Raleway, sans-serif;
-  font-size: 16px;
+  font-size: 100%; //16px
 }
 
 img {
@@ -28,10 +28,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 64px;
+  height: 4em;
   background-color: $gris-fonce;
   .nom {
-    height: 30px;
+    height: 2em;
   }
 }
 
@@ -55,7 +55,7 @@ header {
     margin: 35px 0 16px 0;
   }
   span {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 1.25;
     max-width: 520px;
   }
@@ -69,22 +69,18 @@ header {
 .titre-section {
   font-family: "MADE Canvas", serif;
   font-weight: 900;
-  font-size: 28px;
+  font-size: 2em;
   text-align: center;
 }
 
 .real {
   margin: 36px 0;
-  height: 45vw;
-  max-height: 260px;
 }
 
 .real_img {
   clip-path: polygon(3.4% 0, 100% 0, 79.5% 100%, 0 100%, 0 16%);
   shape-outside: polygon(3.4% 0, 100% 0, 79.5% 100%, 0 100%, 0 16%);
   width: 45%;
-  max-width: 230px;
-  max-height: 230px;
   float: left;
   margin: 0 20px 20px 0;
 }
@@ -98,7 +94,7 @@ header {
   background-color: $or;
   color: #fff;
   font-family: "MADE Canvas", serif;
-  font-size: 20px;
+  font-size: 1.25em;
   text-align: center;
 }
 
@@ -117,7 +113,7 @@ header {
   text-decoration: underline;
   -webkit-text-stroke-width: 1px;
   font-family: "MADE Canvas", serif;
-  font-size: 16px;
+  font-size: 1em;
   color: $gris;
   margin-right: 24px;
   transition: 0.2s;
@@ -126,6 +122,10 @@ header {
 .real_lien:hover {
   color: $or;
   margin-right: 12px;
+}
+
+.clearfix {
+  clear: both;
 }
 
 @media screen and(min-width: 576px) {
@@ -165,20 +165,47 @@ header {
     }
   }
 
+  .container {
+    width: 100%;
+  }
+
+  .realisations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .real {
+    width: 50%;
+    margin: 0;
+    padding: 36px 18px;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+
+  .container {
+    width: 992px;
+    margin: 0 auto;
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
 
-  .bandeNom {
-    height: 80px;
-    .nom {
-      height: 40px;
-    }
+  body {
+    font-size: 110%;
   }
 
   header {
     background-image: url("../img/bg_desktop.png");
     background-position: center;
+  }
+
+  .container {
+    width: 1200px;
+    margin: 0 auto;
   }
 
 }

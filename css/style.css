@@ -47,7 +47,7 @@
 body {
   color: #707070;
   font-family: Raleway, sans-serif;
-  font-size: 16px;
+  font-size: 100%;
 }
 
 img {
@@ -66,12 +66,12 @@ header {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  height: 64px;
+  height: 4em;
   background-color: #333333;
 }
 
 .bandeNom .nom {
-  height: 30px;
+  height: 2em;
 }
 
 .accroche {
@@ -102,7 +102,7 @@ header {
 }
 
 .accroche span {
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 1.25;
   max-width: 520px;
 }
@@ -115,14 +115,12 @@ header {
 .titre-section {
   font-family: "MADE Canvas", serif;
   font-weight: 900;
-  font-size: 28px;
+  font-size: 2em;
   text-align: center;
 }
 
 .real {
   margin: 36px 0;
-  height: 45vw;
-  max-height: 260px;
 }
 
 .real_img {
@@ -130,8 +128,6 @@ header {
           clip-path: polygon(3.4% 0, 100% 0, 79.5% 100%, 0 100%, 0 16%);
   shape-outside: polygon(3.4% 0, 100% 0, 79.5% 100%, 0 100%, 0 16%);
   width: 45%;
-  max-width: 230px;
-  max-height: 230px;
   float: left;
   margin: 0 20px 20px 0;
 }
@@ -146,7 +142,7 @@ header {
   background-color: #cba837;
   color: #fff;
   font-family: "MADE Canvas", serif;
-  font-size: 20px;
+  font-size: 1.25em;
   text-align: center;
 }
 
@@ -165,7 +161,7 @@ header {
   text-decoration: underline;
   -webkit-text-stroke-width: 1px;
   font-family: "MADE Canvas", serif;
-  font-size: 16px;
+  font-size: 1em;
   color: #707070;
   margin-right: 24px;
   transition: 0.2s;
@@ -174,6 +170,10 @@ header {
 .real_lien:hover {
   color: #cba837;
   margin-right: 12px;
+}
+
+.clearfix {
+  clear: both;
 }
 
 @media screen and (min-width: 576px) {
@@ -213,18 +213,42 @@ header {
   .accroche .dev {
     margin-top: 60px;
   }
+  .container {
+    width: 100%;
+  }
+  .realisations {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .real {
+    width: 50%;
+    margin: 0;
+    padding: 36px 18px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 992px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .bandeNom {
-    height: 80px;
-  }
-  .bandeNom .nom {
-    height: 40px;
+  body {
+    font-size: 110%;
   }
   header {
     background-image: url("../img/bg_desktop.png");
     background-position: center;
+  }
+  .container {
+    width: 1200px;
+    margin: 0 auto;
   }
 }
 
