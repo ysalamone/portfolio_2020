@@ -1,7 +1,12 @@
 @import 'fonts';
 
+$gris-fonce: #333333;
+$gris: #707070;
+$gris-clair: #ebebeb;
+$or: #cba837;
+
 body {
-  color: #707070;
+  color: $gris;
   font-family: Raleway, sans-serif;
   font-size: 16px;
 }
@@ -20,7 +25,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 64px;
-  background-color: #333;
+  background-color: $gris-fonce;
   .nom {
     height: 30px;
   }
@@ -93,7 +98,7 @@ header {
   padding: 8px 4%;
   line-height: 1;
   clip-path: polygon(58px 0, 100% 0, calc(100% - 8px) 100%, 50px 100%);
-  background-color: #cba837;
+  background-color: $or;
   color: #fff;
   font-family: "MADE Canvas", serif;
   font-size: 20px;
@@ -116,13 +121,13 @@ header {
   -webkit-text-stroke-width: 1px;
   font-family: "MADE Canvas", serif;
   font-size: 16px;
-  color: #707070;
+  color: $gris;
   margin-right: 24px;
   transition: 0.2s;
 }
 
 .real_lien:hover {
-  color: #cba837;
+  color: $or;
   margin-right: 12px;
 }
 
