@@ -303,6 +303,56 @@ header {
   background-color: #707070;
 }
 
+.section-reseaux {
+  color: #fff;
+  background-color: #333333;
+  padding: 24px;
+}
+
+.section-reseaux div {
+  font-family: "MADE Canvas", serif;
+  -webkit-text-stroke-width: 0.025em;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 18px auto;
+}
+
+.reseaux {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+  width: 100%;
+  max-width: 400px;
+}
+
+.reseau {
+  color: #fff;
+  transition: 0.2s;
+}
+
+.reseau svg {
+  width: 36px;
+  height: 36px;
+  fill: currentColor;
+}
+
+.reseau:hover {
+  color: #cba837;
+}
+
+.section-footer {
+  height: 48px;
+  color: #fff;
+  background-color: #707070;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
 @media screen and (min-width: 576px) {
   .container {
     width: 576px;
@@ -408,6 +458,37 @@ header {
   .container {
     width: 992px;
     margin: 0 auto;
+  }
+  .formulaire {
+    width: 60%;
+  }
+  .section-reseaux {
+    -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+    position: absolute;
+    right: 0;
+    width: 400px;
+    height: 300px;
+    margin: -200px 0;
+  }
+  .section-reseaux .biseau {
+    content: '';
+    width: 25px;
+    height: 150px;
+    float: left;
+    margin-left: 50px;
+    shape-outside: polygon(0 0, 100px 0, 50px 100%, 0 100%);
+  }
+  .section-reseaux div {
+    padding: 0 30px 0 50px;
+    text-align: left;
+    font-size: 2em;
+  }
+  .section-reseaux .reseaux {
+    padding: 0 50px;
+  }
+  .section-footer {
+    margin-top: 100px;
   }
 }
 
