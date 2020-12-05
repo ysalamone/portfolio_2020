@@ -23,7 +23,7 @@ img {
 
 header {
   height: 100%;
-  background: url("../img/bg_mobile.png") no-repeat top/cover;
+  background: url("../img/bg_mobile.jpg") no-repeat top/cover;
 }
 
 .bandeNom {
@@ -298,7 +298,7 @@ header {
 @media screen and (min-width: 768px), screen and (orientation: landscape) {
 
   header {
-    background-image: url("../img/bg_tablet.png");
+    background-image: url("../img/bg_tablet.jpg");
     background-position: top right;
     display: flex;
     flex-direction: column;
@@ -442,7 +442,7 @@ header {
   }
 
   header {
-    background-image: url("../img/bg_desktop.png");
+    background-image: url("../img/bg_desktop.jpg");
     background-position: center;
   }
 
