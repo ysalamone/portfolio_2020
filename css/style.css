@@ -223,16 +223,27 @@ header {
   .container {
     width: 100%;
   }
+  .titre-section {
+    text-align: left;
+  }
   .realisations {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    max-height: 700px;
+  }
+  .realisations-gauche {
+    width: 60%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
     -ms-flex-pack: center;
         justify-content: center;
   }
+  .realisations-droite {
+    width: 40%;
+  }
   .real {
-    width: 50%;
     margin: 0;
     padding: 36px 18px;
   }
