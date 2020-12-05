@@ -166,7 +166,6 @@ header {
   text-transform: uppercase;
   text-decoration: underline;
   font-family: "MADE Canvas", serif;
-  font-size: 1em;
   color: #707070;
   -webkit-text-stroke-width: 0.025em;
   margin-right: 24px;
@@ -219,7 +218,6 @@ header {
 
 .parc_date {
   font-family: "MADE Canvas", serif;
-  font-size: 1em;
   -webkit-text-stroke-width: 0.025em;
   margin-bottom: 0;
 }
@@ -231,7 +229,6 @@ header {
 
 .parc_desc {
   margin-top: 0.5em;
-  font-size: 1em;
 }
 
 .diplome::before {
