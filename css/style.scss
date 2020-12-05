@@ -177,10 +177,6 @@ header {
   margin-top: 0.5em;
 }
 
-.diplome::before {
-  border-color: $or;
-}
-
 .diplome {
   .parc_deco::before, .parc_deco::after {
     background-color: $or;
@@ -188,10 +184,6 @@ header {
   .parc_titre, .parc_desc {
     color: $or;
   }
-}
-
-.pro::before {
-  border-color: $gris;
 }
 
 .pro {

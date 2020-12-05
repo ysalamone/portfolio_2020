@@ -231,20 +231,12 @@ header {
   margin-top: 0.5em;
 }
 
-.diplome::before {
-  border-color: #cba837;
-}
-
 .diplome .parc_deco::before, .diplome .parc_deco::after {
   background-color: #cba837;
 }
 
 .diplome .parc_titre, .diplome .parc_desc {
   color: #cba837;
-}
-
-.pro::before {
-  border-color: #707070;
 }
 
 .pro .parc_deco::before, .pro .parc_deco::after {
