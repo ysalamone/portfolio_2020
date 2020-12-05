@@ -132,6 +132,78 @@ header {
   clear: both;
 }
 
+.section-2 {
+  background-color: $gris-clair;
+}
+
+.parcours {
+  display: flex;
+  flex-direction: column;
+  ul {
+    display: inline-block;
+  }
+}
+
+.parc {
+  margin: 18px 0;
+  padding-left: 24px;
+  border-left: 1px solid $gris;
+  transition: 0.2s;
+}
+
+.parc:hover {
+  transform: translateX(15px);
+}
+
+.parc_titre {
+  font-family: "MADE Canvas", serif;
+  font-size: 1.375em;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.parc_date {
+  font-family: "MADE Canvas", serif;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.parc_lieu {
+  font-weight: 200;
+  margin-bottom: 0;
+}
+
+.parc_desc {
+  margin-top: 0.5em;
+  font-size: 1em;
+}
+
+.diplome::before {
+  border-color: $or;
+}
+
+.diplome {
+  .parc_deco::before, .parc_deco::after {
+    background-color: $or;
+  }
+  .parc_titre, .parc_desc {
+    color: $or;
+  }
+}
+
+.pro::before {
+  border-color: $gris;
+}
+
+.pro {
+  .parc_deco::before, .parc_deco::after {
+    background-color: $gris;
+  }
+  .parc_date {
+    color: $or;
+  }
+}
+
 @media screen and(min-width: 576px) {
 
   .container {
@@ -183,9 +255,6 @@ header {
 
     .realisations {
     display: flex;
-    //flex-direction: column;
-    //flex-wrap: wrap;
-    //justify-content: center;
     max-height: 700px;
   }
 
@@ -203,6 +272,27 @@ header {
   .real {
     margin: 0;
     padding: 36px 18px;
+  }
+
+  .parc {
+    width: 50%;
+    border: 0;
+  }
+
+  .diplome {
+    text-align: right;
+    align-self: flex-start;
+    padding: 0 24px 0 0;
+    border-right: 1px solid $gris;
+  }
+
+  .diplome:hover {
+    transform: translateX(-15px);
+  }
+
+  .pro {
+    align-self: flex-end;
+    border-left: 1px solid $gris;
   }
 
 }
