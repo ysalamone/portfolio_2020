@@ -247,6 +247,62 @@ header {
   color: #cba837;
 }
 
+.formulaire {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.formulaire .champ {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%;
+}
+
+.formulaire label {
+  font-family: "MADE Canvas", serif;
+  -webkit-text-stroke-width: 0.025em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  padding: 0 0.5em;
+  position: relative;
+  top: 0.75em;
+  left: 0.5em;
+  background-color: #fff;
+}
+
+.formulaire input, .formulaire textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #707070;
+  padding: 1em;
+}
+
+.formulaire .bouton {
+  text-align: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-family: "MADE Canvas", serif;
+  font-size: 1.25em;
+  -webkit-text-stroke-width: 0.025em;
+  color: #fff;
+  background-color: #333333;
+  padding: 0.5em;
+  margin-top: 1.5em;
+  width: 200px;
+  transition: 0.2s;
+}
+
+.formulaire .bouton:hover {
+  background-color: #707070;
+}
+
 @media screen and (min-width: 576px) {
   .container {
     width: 576px;
@@ -331,6 +387,20 @@ header {
     -ms-flex-item-align: end;
         align-self: flex-end;
     border-left: 1px solid #707070;
+  }
+  .ligne-champs {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .ligne-champs .champ {
+    width: 50%;
+  }
+  .ligne-champs .champ:first-child {
+    padding-right: 1.5em;
+  }
+  .formulaire .bouton {
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 

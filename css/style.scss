@@ -195,6 +195,55 @@ header {
   }
 }
 
+.formulaire {
+  display: flex;
+  flex-direction: column;
+
+  .champ {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  label {
+    font-family: "MADE Canvas", serif;
+    -webkit-text-stroke-width: 0.025em;
+    width: fit-content;
+    margin: 0;
+    padding: 0 0.5em;
+    position: relative;
+    top: 0.75em;
+    left: 0.5em;
+    background-color: #fff;
+  }
+
+  input, textarea {
+    appearance: none;
+    border: 1px solid $gris;
+    padding: 1em;
+  }
+
+  .bouton {
+    text-align: center;
+    align-self: flex-end;
+    font-family: "MADE Canvas", serif;
+    font-size: 1.25em;
+    -webkit-text-stroke-width: 0.025em;
+    color: #fff;
+    background-color: $gris-fonce;
+    padding: 0.5em;
+    margin-top: 1.5em;
+    width: 200px;
+    transition: 0.2s;
+  }
+
+  .bouton:hover {
+    background-color: $gris;
+  }
+
+}
+
+
 @media screen and(min-width: 576px) {
 
   .container {
@@ -284,6 +333,20 @@ header {
   .pro {
     align-self: flex-end;
     border-left: 1px solid $gris;
+  }
+
+  .ligne-champs {
+    display: flex;
+    .champ {
+      width: 50%;
+    }
+    .champ:first-child {
+      padding-right: 1.5em;
+    }
+  }
+
+  .formulaire .bouton {
+    align-self: center;
   }
 
 }
