@@ -37,7 +37,7 @@
 							<p class="real_desc">
 								Création d’un site web, d’un back-office et d’un catalogue pour un service de drive équitable.
 							</p>
-							<a class="real_lien" href="#">En savoir plus</a>
+							<span class="real_lien" onclick="toggle('ppe')">En savoir plus</span>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -52,7 +52,7 @@
 							<p class="real_desc">
 								Étude d’un logiciel de caisse open-source et création d’un module de synchronisation avec une base de données.
 							</p>
-							<a class="real_lien" href="#">En savoir plus</a>
+							<span class="real_lien" onclick="toggle('pasteque')">En savoir plus</span>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -65,7 +65,7 @@
 							<p class="real_desc">
 								Portage d’un site web en application iOS et Android, avec calcul de la position GPS et envoi de notifications push.
 							</p>
-							<a class="real_lien" href="#">En savoir plus</a>
+							<span class="real_lien" onclick="toggle('pa')">En savoir plus</span>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -171,6 +171,138 @@
 		Yohan Salamone © 2020 — Tous droits réservés
 	</div>
 
+	<div class="fiche-projet fiche-ppe">
+		<div class="fproj_fond">
+			<div class="fermer" onclick="toggle('ppe')">
+				<svg><use xlink:href="svg/sprite.svg#croix"></use></svg>
+			</div>
+			<div class="fproj_container">
+				<div class="fproj_entete">
+					<div class="fproj_date"><span>JANVIER 2019</span><span> – </span><span>AVRIL 2020</span></div>
+					<div class="fproj_nom">
+						<span>Projet de BTS</span><span>New World</span>
+					</div>
+				</div>
+				<div class="fproj_titre">Capture d'écran</div>
+				<div class="fproj_capture">
+					<img src="img/ppe-capture.png"/>
+				</div>
+				<div class="fproj_titre">Description du projet</div>
+				<p>
+					Création d’une plateforme de drive équitable sous 3 aspects :
+					<ul>
+						<li>Un site internet permettant l’inscription en tant que producteur, point relais ou consommateur, et permettant de gérer son compte (ses informations personnelles, ses produits en ligne et les points retraits sélectionnés si l’on est producteur) ;</li>
+						<li>Un logiciel d’administration back-office permettant la gestion des produits et des utilisateurs du site ;</li>
+						<li>Un logiciel permettant de générer automatiquement un catalogue hebdomadaire personnalisé, montrant les produits disponibles dans les points relais sélectionnés par le consommateur.</li>
+					</ul>
+				</p>
+				<div class="fproj_titre">Langages & techniques utilisés</div>
+				<ul class="fproj_langages">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Bootstrap</li>
+					<li>JavaScript & JSON</li>
+					<li>AJAX</li>
+					<li>PHP</li>
+					<li>SQL & mariaDB</li>
+					<li>Qt</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="fiche-projet fiche-pasteque">
+		<div class="fproj_fond">
+			<div class="fermer" onclick="toggle('pasteque')">
+				<svg><use xlink:href="svg/sprite.svg#croix"></use></svg>
+			</div>
+			<div class="fproj_container">
+				<div class="fproj_entete">
+					<div class="fproj_date"><span>JANVIER 2020</span><span> – </span><span>FÉVRIER 2020</span></div>
+					<div class="fproj_nom">
+						<span>Stage de 2ème année de BTS</span><span>Pastèque</span>
+					</div>
+				</div>
+				<div class="fproj_titre">Capture d'écran</div>
+				<div class="fproj_capture">
+					<img src="img/pasteque-capture.png"/>
+				</div>
+				<div class="fproj_titre">Description du projet</div>
+				<p>
+				Étude du fonctionnement des logiciels de caisse "Pastèque" (écosystème composé d'un serveur avec API, d'une interface d'administration en PHP et d'un client desktop Java).
+				</p>
+				<p>
+				L'objectif était de personnaliser cet écosystème, afin de synchroniser Pastèque avec la base de données des spectacles proposés par une ville (pour y implémenter les catégories, les spectacles, les séances et les tarifs proposés).
+				<ul>
+					<li>Dans le serveur, création d'une route API de récupération de données depuis le back-office du client :
+						<ul>
+							<li>Création des nouvelles entrées ;</li>
+							<li>Mise à jour des entrées existantes ;</li>
+							<li>Suppression des entrées obsolètes ;</li>
+						</ul>
+					</li>
+				<li>Dans l'interface d'administration, création d'un panneau dédié à la synchronisation de ces données.</li>
+				</ul>
+				</p>
+				<div class="fproj_titre">Langages & techniques utilisés</div>
+				<ul class="fproj_langages">
+					<li>PHP (orienté objet)</li>
+					<li>ORM Doctrine</li>
+					<li>Moteur de rendus Twig</li>
+					<li>Micro-framework Silex</li>
+					<li>JSON</li>
+					<li>SQL</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="fiche-projet fiche-pa">
+		<div class="fproj_fond">
+			<div class="fermer" onclick="toggle('pa')">
+				<svg><use xlink:href="svg/sprite.svg#croix"></use></svg>
+			</div>
+			<div class="fproj_container">
+				<div class="fproj_entete">
+					<div class="fproj_date"><span>MAI 2019</span><span> – </span><span>JUILLET 2019</span></div>
+					<div class="fproj_nom">
+						<span>Stage de 1ère année de BTS</span><span>Pharmacie amie</span>
+					</div>
+				</div>
+				<div class="fproj_titre">Capture d'écran</div>
+				<div class="fproj_capture">
+					<img src="img/pa-capture.png"/>
+				</div>
+				<div class="fproj_titre">Description du projet</div>
+				<p>
+					Création d'un portage du site <a class="lien" href="https://pharmacieamie.fr">pharmacieamie.fr</a> sur iOS et Android à l'aide de React Native.
+				</p>
+				<p>
+					Implémentation des fonctionnalités suivantes, avec dialogue entre la WebView affichée et l'application native :
+				<ul>
+					<li>Récupération de la géolocalisation utilisateur (via le GPS du téléphone), chargement du site avec affichage des pharmacies à proximité ;</li>
+					<li>Détection du premier lancement de l'application ;</li>
+					<li>Affichage de notifications locales ;</li>
+					<li>Affichage de notifications distantes générées par Firebase ;</li>
+					<li>Détection de la sortie du site et du téléchargement de fichiers (sortie de l'application).</li>
+				</ul>
+				</p>
+				<div class="fproj_titre">Langages & techniques utilisés</div>
+				<ul class="fproj_langages">
+					<li>React Native</li>
+					<li>JavaScript & JSON</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
 	</body>
 </html>
+<script type="text/javascript">
+	// affiche le projet dont le nom est passé en paramètre
+	const toggle = (projet) => {
+		const divProjet = document.querySelector(`.fiche-${projet}`);
+		divProjet.style.display = divProjet.style.display === 'flex' ? 'none' : 'flex';
+	};
+
+</script>
