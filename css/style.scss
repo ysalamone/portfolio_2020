@@ -220,6 +220,7 @@ header {
   input, textarea {
     appearance: none;
     border: 1px solid $gris;
+    border-radius: 0;
     padding: 1em;
   }
 
