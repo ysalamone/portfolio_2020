@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'MADE Canvas';
   src: url("../fonts/MADECanvas-Black.woff2") format("woff2");
@@ -40,10 +41,8 @@
   font-style: normal;
 }
 
-* {
-  box-sizing: border-box;
-}
-
+/* *************** */
+/* styles généraux */
 html, body {
   height: 100%;
 }
@@ -58,6 +57,9 @@ img {
   width: 100%;
 }
 
+/* *************** */
+/* ************************* */
+/* styles relatifs au header */
 header {
   height: 100%;
   background: url("../img/bg_mobile.jpg") no-repeat top/cover;
@@ -111,6 +113,9 @@ header {
   max-width: 520px;
 }
 
+/* ************************* */
+/* *********************** */
+/* styles communs au corps */
 .container {
   width: 100%;
   padding: 36px 24px;
@@ -124,6 +129,9 @@ header {
   -webkit-text-stroke-width: 0.025em;
 }
 
+/* *********************** */
+/* ******************************** */
+/* styles relatifs aux réalisations */
 .real {
   margin: 36px 0;
 }
@@ -182,6 +190,9 @@ header {
   clear: both;
 }
 
+/* ******************************** */
+/* **************************** */
+/* styles relatifs aux parcours */
 .section-parcours {
   background-color: #ebebeb;
 }
@@ -248,6 +259,9 @@ header {
   color: #cba837;
 }
 
+/* **************************** */
+/* ************************** */
+/* styles relatifs au contact */
 .formulaire {
   display: -ms-flexbox;
   display: flex;
@@ -305,6 +319,9 @@ header {
   background-color: #707070;
 }
 
+/* ************************** */
+/* *************************** */
+/* styles relatifs aux réseaux */
 .section-reseaux {
   color: #fff;
   background-color: #333333;
@@ -343,6 +360,9 @@ header {
   color: #cba837;
 }
 
+/* *************************** */
+/* ************************* */
+/* styles relatifs au footer */
 .section-footer {
   height: 48px;
   color: #fff;
@@ -355,6 +375,9 @@ header {
       align-items: center;
 }
 
+/* ************************* */
+/* ********************************* */
+/* styles relatifs aux fiches projet */
 .fiche-projet {
   display: none;
   -ms-flex-pack: center;
@@ -469,6 +492,7 @@ header {
      object-fit: contain;
 }
 
+/* ********************************* */
 @media screen and (min-width: 576px) {
   .container {
     width: 576px;
