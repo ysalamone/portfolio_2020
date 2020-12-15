@@ -292,7 +292,7 @@ header {
 
 .comp:hover {
   svg {
-    filter: none;
+    filter: grayscale(0);
   }
   span {
     opacity: 1;
