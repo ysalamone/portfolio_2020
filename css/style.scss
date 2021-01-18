@@ -290,23 +290,12 @@ header {
   }
 }
 
-/*.comp:hover, .comp:active {
+.comp:hover, .comp:active {
   svg {
     filter: grayscale(0);
   }
   span {
     opacity: 1;
-  }
-}*/
-
-@media(hover: hover) and (pointer: fine) {
-  .comp:hover, .comp:active {
-    svg {
-      filter: grayscale(0);
-    }
-    span {
-      opacity: 1;
-    }
   }
 }
 

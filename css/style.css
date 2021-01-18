@@ -333,22 +333,13 @@ header {
   transition: 0.2s;
 }
 
-/*.comp:hover, .comp:active {
-  svg {
-    filter: grayscale(0);
-  }
-  span {
-    opacity: 1;
-  }
-}*/
-@media (hover: hover) and (pointer: fine) {
-  .comp:hover svg, .comp:active svg {
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
-  }
-  .comp:hover span, .comp:active span {
-    opacity: 1;
-  }
+.comp:hover svg, .comp:active svg {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.comp:hover span, .comp:active span {
+  opacity: 1;
 }
 
 /* ******************************* */
