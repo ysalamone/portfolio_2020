@@ -290,7 +290,7 @@ header {
   }
 }
 
-.comp:hover {
+.comp:hover, .comp:active {
   svg {
     filter: grayscale(0);
   }
@@ -304,10 +304,39 @@ header {
 
 
 /* ******************************* */
-/* styles relatifs au CV */
+/* styles relatifs à l'à-propos */
 
-.section-cv {
+.section-a-propos {
   background-color: $gris-clair;
+}
+
+.a-propos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .ap-photo {
+    width: 75%;
+    margin: 1rem 0;
+  }
+  .big {
+    display: block;
+    font-family: "MADE Canvas", serif;
+    -webkit-text-stroke-width: 0.025em;
+    font-size: 1.375rem;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+  }
+  .cint {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    svg {
+      width: 1.75rem;
+      height: 1.75rem;
+      fill: currentColor;
+      margin-right: 1rem;
+    }
+  }
 }
 
 a.bouton {
@@ -607,6 +636,21 @@ a.bouton {
   .pro {
     align-self: flex-end;
     border-left: 1px solid $gris;
+  }
+
+  // disposition de la section à propos en ligne
+  .a-propos {
+    flex-direction: row-reverse;
+    .ap-photo {
+      width: 33%;
+      margin-right: 2rem;
+    }
+    .ap-texte {
+      width: 66%;
+    }
+    .big {
+      text-align: left;
+    }
   }
 
   // disposition des "petits" champs en ligne

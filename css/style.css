@@ -64,7 +64,7 @@ img {
   font-family: "MADE Canvas", serif;
   font-size: 1.25em;
   -webkit-text-stroke-width: 0.025em;
-  color: #ffffff;
+  color: white;
   background-color: #333333;
   padding: 0.5em 1em;
   margin-top: 1.5em;
@@ -172,7 +172,7 @@ header {
   -webkit-clip-path: polygon(58px 0, 100% 0, calc(100% - 8px) 100%, 50px 100%);
           clip-path: polygon(58px 0, 100% 0, calc(100% - 8px) 100%, 50px 100%);
   background-color: #cba837;
-  color: #ffffff;
+  color: white;
   font-family: "MADE Canvas", serif;
   font-size: 1.25em;
   text-align: center;
@@ -303,7 +303,7 @@ header {
   top: 0.75em;
   margin: 0 auto;
   padding: 0 0.5em;
-  background-color: #ffffff;
+  background-color: white;
 }
 
 .comp {
@@ -333,26 +333,64 @@ header {
   transition: 0.2s;
 }
 
-.comp:hover svg {
+.comp:hover svg, .comp:active svg {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }
 
-.comp:hover span {
+.comp:hover span, .comp:active span {
   opacity: 1;
 }
 
 /* ******************************* */
 /* ******************************* */
-/* styles relatifs au CV */
-.section-cv {
+/* styles relatifs à l'à-propos */
+.section-a-propos {
   background-color: #ebebeb;
+}
+
+.a-propos {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.a-propos .ap-photo {
+  width: 75%;
+  margin: 1rem 0;
+}
+
+.a-propos .big {
+  display: block;
+  font-family: "MADE Canvas", serif;
+  -webkit-text-stroke-width: 0.025em;
+  font-size: 1.375rem;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+
+.a-propos .cint {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 1rem 0;
+}
+
+.a-propos .cint svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: currentColor;
+  margin-right: 1rem;
 }
 
 a.bouton {
   display: block;
   text-decoration: none;
-  color: #ffffff;
+  color: white;
   margin: 1em auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -388,7 +426,7 @@ a.bouton {
   position: relative;
   top: 0.75em;
   left: 0.5em;
-  background-color: #ffffff;
+  background-color: white;
 }
 
 .formulaire input, .formulaire textarea {
@@ -408,7 +446,7 @@ a.bouton {
 /* *************************** */
 /* styles relatifs aux réseaux */
 .section-reseaux {
-  color: #ffffff;
+  color: white;
   background-color: #333333;
   padding: 24px;
 }
@@ -431,7 +469,7 @@ a.bouton {
 }
 
 .reseau {
-  color: #ffffff;
+  color: white;
   transition: 0.2s;
 }
 
@@ -450,7 +488,7 @@ a.bouton {
 /* styles relatifs au footer */
 .section-footer {
   height: 48px;
-  color: #ffffff;
+  color: white;
   background-color: #707070;
   display: -ms-flexbox;
   display: flex;
@@ -519,7 +557,7 @@ a.bouton {
 .fermer svg {
   width: 32px;
   height: 32px;
-  stroke: #ffffff;
+  stroke: white;
 }
 
 .fproj_entete {
@@ -548,7 +586,7 @@ a.bouton {
   -webkit-clip-path: polygon(0 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
           clip-path: polygon(0 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
   background-color: #cba837;
-  color: #ffffff;
+  color: white;
   font-family: "MADE Canvas", serif;
   font-size: 2em;
   -webkit-text-stroke-width: 0.025em;
@@ -663,6 +701,20 @@ a.bouton {
     -ms-flex-item-align: end;
         align-self: flex-end;
     border-left: 1px solid #707070;
+  }
+  .a-propos {
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+  }
+  .a-propos .ap-photo {
+    width: 33%;
+    margin-right: 2rem;
+  }
+  .a-propos .ap-texte {
+    width: 66%;
+  }
+  .a-propos .big {
+    text-align: left;
   }
   .ligne-champs {
     display: -ms-flexbox;
