@@ -313,7 +313,8 @@ header {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  width: 6em;
+  width: 8em;
+  margin: 1rem 0 1.5rem 0;
 }
 
 .comp svg {
@@ -331,6 +332,8 @@ header {
   -webkit-transform: translateY(52px);
           transform: translateY(52px);
   transition: 0.2s;
+  width: 8rem;
+  text-align: center;
 }
 
 .comp:hover svg, .comp:active svg {
@@ -814,6 +817,12 @@ a.bouton {
   .container {
     width: 1200px;
     margin: 0 auto;
+  }
+}
+
+@media (hover: none) {
+  .comp span {
+    opacity: 1;
   }
 }
 
