@@ -13,7 +13,6 @@ $message =
     '<div><b>De la part de :</b> '.$_POST['nom'].' <'.$_POST['email'].'></div>' .
     '<div><b>Date d\'envoi :</b> '.date("\l\\e d/m/Y à H:i:s").'</div>' .
     '<div><b>Sujet :</b> '.$_POST['sujet'].'</div>' .
-    '<hr/>' .
     '<p>'.str_replace(["\n", "\r\n"], '<br/>', $_POST['message']).'</p>'
 ;
 
@@ -25,4 +24,5 @@ $headers =
 
 $sent = mail($to, $subject, $message, $headers);
 
-echo var_dump($sent);
+if($sent)
+    header('Location: http://www.yohansalamone.com');
