@@ -3,7 +3,7 @@
 echo var_dump($_POST);
 
 $to = 'Yohan Salamone <yohan.salamone@outlook.com>';
-$subject = 'Nouveau message de la part de '.$_POST['nom'];
+$subject = $_POST['sujet'];
 $message =
     '<p>Bonjour,</p>' .
     '<p>Le message ci-dessous vous a été envoyé depuis le formulaire du portfolio.</p>' .
