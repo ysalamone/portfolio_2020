@@ -296,6 +296,7 @@ header {
   font-family: "MADE Canvas", serif;
   -webkit-text-stroke-width: 0.025em;
   font-weight: normal;
+  text-align: center;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
