@@ -552,6 +552,50 @@ a.bouton {
 
 
 
+/* ************************** */
+/* styles relatifs aux toasts */
+
+.toast-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0 1rem 1rem 1rem;
+  transition: 0.4s;
+}
+
+.toast-hidden {
+  bottom: -60px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.toast {
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  box-shadow: 0 0 1rem 0 rgba($gris, 0.2);
+}
+
+.toast-success {
+  color: #7acc7a;
+  background-color: #e6ffe6;
+  border-color: #7acc7a;
+}
+
+.toast-error {
+  color: #cc7a7a;
+  background-color: #ffe6e6;
+  border-color: #cc7a7a;
+}
+
+/* ************************** */
+
+
+
 @media screen and(min-width: 576px) {
 
   .container {

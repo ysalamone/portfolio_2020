@@ -444,6 +444,19 @@
 	</div>
 	<!-- fin des fiches projet -->
 
+	<!-- début des toasts relatifs au message -->
+	<div class="toast-container toast-hidden" id="email-sent">
+		<div class="toast toast-success">
+			Le message a bien été envoyé. Merci !
+		</div>
+	</div>
+	<div class="toast-container toast-hidden" id="email-not-sent">
+		<div class="toast toast-error">
+			Le message n'a pas pu être envoyé. Vous pouvez me contacter par e-mail.
+		</div>
+	</div>
+	<!-- fin des toasts relatifs au message -->
+
 	</body>
 </html>
 <script type="text/javascript">
@@ -452,5 +465,15 @@
 		const divProjet = document.querySelector(`.fiche-${projet}`);
 		divProjet.style.display = divProjet.style.display === 'flex' ? 'none' : 'flex';
 	};
+
+	// affiche le toast d'envoi du message
+	let url = new URL(window.location.href);
+	let get_params = new URLSearchParams(url.search);
+	if(get_params.length !== 0 && get_params.has('sent')) {
+		let toast_id = get_params.get('sent') ? 'email-sent' : 'email-not-sent';
+		let toast = document.getElementById(toast_id);
+		setTimeout(() => toast.className = 'toast-container', 100);
+		setTimeout(() => toast.className = 'toast-container toast-hidden', 5000);
+	}
 
 </script>

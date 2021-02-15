@@ -25,4 +25,6 @@ $headers =
 $sent = mail($to, $subject, $message, $headers);
 
 if($sent)
-    header('Location: http://www.yohansalamone.com');
+    header('Location: http://www.yohansalamone.com?sent=true');
+else
+    header('Location: http://www.yohansalamone.com?sent=false');
