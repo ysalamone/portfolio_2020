@@ -6,16 +6,15 @@ $to = 'Yohan Salamone <yohan.salamone@outlook.com>';
 $subject = 'Nouveau message de la part de '.$_POST['nom'];
 $message =
     '<p>Bonjour,</p>' .
-    '<p>Un message a été envoyé depuis le formulaire du portfolio, le voici : </p>' .
+    '<p>Le message ci-dessous vous a été envoyé depuis le formulaire du portfolio.</p>' .
+    '<p>Bonne journée.</p>' .
     "<br/>" .
-    '<hr/>' .
+    '<hr size="2"/>' .
     '<div><b>De la part de :</b> '.$_POST['nom'].' <'.$_POST['email'].'></div>' .
     '<div><b>Date d\'envoi :</b> '.date("\l\\e d/m/Y à H:i:s").'</div>' .
     '<div><b>Sujet :</b> '.$_POST['sujet'].'</div>' .
-    '<div><b>Message :</b> <p>'.str_replace(["\n", "\r\n"], '<br/>', $_POST['message']).'</p></div>' .
     '<hr/>' .
-    "<br/>" .
-    '<p>Bonne journée.</p>'
+    '<p>'.str_replace(["\n", "\r\n"], '<br/>', $_POST['message']).'</p>'
 ;
 
 $headers =
