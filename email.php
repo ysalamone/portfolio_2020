@@ -10,7 +10,7 @@ $message =
     '<p>Bonne journée.</p>' .
     "<br/>" .
     '<hr size="2"/>' .
-    '<div><b>De la part de :</b> '.$_POST['nom'].' <'.$_POST['email'].'></div>' .
+    '<div><b>De la part de :</b> '.$_POST['nom'].' &lt;'.$_POST['email'].'&gt;</div>' .
     '<div><b>Date d\'envoi :</b> '.date("\l\\e d/m/Y à H:i:s").'</div>' .
     '<div><b>Sujet :</b> '.$_POST['sujet'].'</div>' .
     '<p>'.str_replace(["\n", "\r\n"], '<br/>', $_POST['message']).'</p>'
