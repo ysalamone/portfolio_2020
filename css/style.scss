@@ -252,7 +252,7 @@ header {
 .bloc-competences {
   //margin-top: 2em;
   padding: 1.5em 1em 0 1em;
-  border-top: 1px solid $gris;
+  border-top: 1px solid $or;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -268,6 +268,7 @@ header {
   top: 0.75em;
   margin: 0 auto;
   padding: 0 0.5em;
+  color: $or;
   background-color: $blanc;
 }
 
@@ -385,6 +386,10 @@ a.bouton {
     border: 1px solid $gris;
     border-radius: 0;
     padding: 1em;
+  }
+
+  input:focus ~ label {
+    color: $or;
   }
 
   input[type=submit] {

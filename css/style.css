@@ -283,7 +283,7 @@ header {
 /* styles relatifs aux compétences */
 .bloc-competences {
   padding: 1.5em 1em 0 1em;
-  border-top: 1px solid #707070;
+  border-top: 1px solid #cba837;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -304,6 +304,7 @@ header {
   top: 0.75em;
   margin: 0 auto;
   padding: 0 0.5em;
+  color: #cba837;
   background-color: white;
 }
 
@@ -440,6 +441,10 @@ a.bouton {
   border: 1px solid #707070;
   border-radius: 0;
   padding: 1em;
+}
+
+.formulaire input:focus ~ label {
+  color: #cba837;
 }
 
 .formulaire input[type=submit] {
