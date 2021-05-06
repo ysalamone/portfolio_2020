@@ -32,6 +32,24 @@ function sass() {
 }
 
 /*
+ * SASS$ -> concat
+ */
+function sassConcatMinif() {
+	let options_unuse = {
+		html: 'http://starter.spip'
+	};
+	return (
+		src('css/**/*.scss')
+			.pipe(sourcemaps.init())
+			.pipe(gulpSass({ outputStyle: 'compressed' }))
+			.on('error', err => notify().write(err))
+			.pipe(postcss([autoprefixer(), cssnano()])) // autoprefixer  +  minifier
+			.pipe(sourcemaps.write('.')) // initialize sourcemaps first
+			.pipe(dest('css'))
+	);
+}
+
+/*
  * JS -> concat + babel
  */
 function jsConcatMinif() {
@@ -139,5 +157,6 @@ module.exports = {
 	sass: sass,
 	watch: parallel(watcherSass, watcherJsConcatMinif, watcherJsBabel),
 	sprite: svgSprite,
-	svgmin: svgMin
+	svgmin: svgMin,
+	prod: parallel(sassConcatMinif, jsConcatMinif, jsBabel)
 };

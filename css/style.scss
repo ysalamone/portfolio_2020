@@ -338,7 +338,7 @@ header {
     svg {
       width: 1.75rem;
       height: 1.75rem;
-      fill: currentColor;
+      fill: $or;
       margin-right: 1rem;
     }
   }
@@ -379,6 +379,8 @@ a.bouton {
     top: 0.75em;
     left: 0.5em;
     background-color: $blanc;
+    order: -1;
+    transition: 0.2s;
   }
 
   input, textarea {
@@ -386,10 +388,16 @@ a.bouton {
     border: 1px solid $gris;
     border-radius: 0;
     padding: 1em;
-  }
+    transition: 0.2s;
 
-  input:focus ~ label {
-    color: $or;
+    &:focus {
+      outline: none;
+      border-color: $or;
+
+      & ~ label {
+        color: $or;
+      }
+    }
   }
 
   input[type=submit] {
