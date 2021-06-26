@@ -272,7 +272,7 @@
 	<div class="section-contact">
 		<div class="container">
 			<h2 class="titre-section">Contact</h2>
-			<form class="formulaire" method="post" action="email.php">
+			<form class="formulaire" id="formulaire-contact" method="post" action="email.php">
 				<div class="ligne-champs">
 					<div class="champ">
 						<input type="text" id="nom" name="nom" autocomplete="name" required/>
@@ -291,7 +291,12 @@
 					<textarea id="message" name="message" required rows="4"></textarea>
 					<label for="message">Message</label>
 				</div>
-				<input class="bouton" type="submit" id="envoyer" value="Envoyer"/>
+				<button class="bouton g-recaptcha"
+						data-sitekey="6LfwPVobAAAAAO3zX48Vfe60MV7zVdewQEqPir5a"
+						data-callback='onSubmit'
+						data-action='submit'>
+					Envoyer
+				</button>
 			</form>
 		</div>
 	</div>
@@ -464,7 +469,13 @@
 
 	</body>
 </html>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 <script type="text/javascript">
+	// envoi du formulaire via bouton captcha
+	function onSubmit(token) {
+		document.getElementById("formulaire-contact").submit();
+	}
+
 	// affiche le projet dont le nom est passé en paramètre
 	const toggle = (projet) => {
 		const divProjet = document.querySelector(`.fiche-${projet}`);

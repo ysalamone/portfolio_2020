@@ -400,8 +400,12 @@ a.bouton {
     }
   }
 
-  input[type=submit] {
-    padding: 0.5em;
+  .bouton.g-recaptcha {
+    border: none;
+  }
+
+  .grecaptcha-badge {
+    display: none !important;
   }
 
 }
