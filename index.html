@@ -483,7 +483,7 @@
 	let url = new URL(window.location.href);
 	let get_params = new URLSearchParams(url.search);
 	if(get_params.length !== 0 && get_params.has('sent')) {
-		let toast_id = get_params.get('sent') ? 'email-sent' : 'email-not-sent';
+		let toast_id = get_params.get('sent') === 'true' ? 'email-sent' : 'email-not-sent';
 		let toast = document.getElementById(toast_id);
 		setTimeout(() => toast.className = 'toast-container', 100);
 		setTimeout(() => toast.className = 'toast-container toast-hidden', 5000);
